@@ -16,6 +16,15 @@ An MCP (Model Context Protocol) server for SwitchBot home automation, built with
 4. Go to **Developer Options → Get Token**
 5. Copy both your **Token** and **Secret Key**
 
+## Installation
+
+### Homebrew (recommended)
+
+```bash
+brew tap roryhow/switchbot-mcp
+brew install switchbot-mcp
+```
+
 ## Setup
 
 ### Option 1: Environment Variables (recommended)
@@ -76,8 +85,7 @@ Add to your `claude_desktop_config.json`:
 {
   "mcpServers": {
     "switchbot": {
-      "command": "java",
-      "args": ["-jar", "/absolute/path/to/switchbot-mcp-1.0.0.jar"],
+      "command": "switchbot-mcp",
       "env": {
         "SWITCHBOT_TOKEN": "your-token-here",
         "SWITCHBOT_SECRET": "your-secret-here"
@@ -86,6 +94,8 @@ Add to your `claude_desktop_config.json`:
   }
 }
 ```
+
+> If you installed via JAR instead of Homebrew, use `"command": "java"` with `"args": ["-jar", "/absolute/path/to/switchbot-mcp-1.0.0.jar"]`.
 
 ## Available Tools
 
