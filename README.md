@@ -128,6 +128,12 @@ Add to your `claude_desktop_config.json`:
 
 **IR Remotes:** `turnOn`, `turnOff`, or any custom button (commandType: "customize")
 
+## Disclaimer
+
+This MCP server is based on the publicly accessible [SwitchBot API documentation](https://github.com/OpenWonderLabs/SwitchBotAPI). This repository does not actively track changes to the SwitchBot API, and updates to the upstream API may introduce breaking changes without notice.
+
+If you encounter a breakage due to an API change, issues and PRs to this repository are welcome.
+
 ## API Rate Limits
 
 SwitchBot allows 10,000 API calls per day. The server does not enforce rate limiting internally.
